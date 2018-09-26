@@ -9,7 +9,7 @@ einsteinium_cli=/home/xrobesx/einsteinium/src/einsteinium-cli
 utxo_min=75
 utxo_max=75
 
-# Here we trying to split only (!) assetchains, KMD, GAME, BTC need additional code.
+# Here we trying to split only (!) assetchains
 
 declare -a kmd_coins=(REVS SUPERNET DEX PANGEA JUMBLR BET CRYPTO HODL MSHARK BOTS MGW COQUI WLC KV CEAL MESH MNZ AXO ETOMIC BTCH NINJA OOT BNTN CHAIN PRLPAY DSEC GLXT EQL VRSC ZILLA RFOX SEC CCL PIRATE MGNX)
 for i in "${kmd_coins[@]}"
@@ -22,17 +22,12 @@ do
     else
 	    if [ $utxo -lt $utxo_min ]; then
 	        need=$(($utxo_max-$utxo))
-		echo ' --> '$need
+		echo ' now --> need '$need
 		# /home/xrobesx/SuperNET/iguana/acsplit $i $need
-		echo "Do you wish to split $i?"
-		select yn in "Yes" "No"; do
-		    case $yn in
-			Yes ) curl --url "http://127.0.0.1:7776" --data "{\"coin\":\""${i}"\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":\"10000\",\"sendflag\":1,\"duplicates\":"${need}"}"; break;;
-			No ) break;;
-		    esac
-		done
+		echo "Making $need $i UTXO's..."
+		curl --url "http://127.0.0.1:7776" --data "{\"coin\":\""${i}"\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":\"10000\",\"sendflag\":1,\"duplicates\":"${need}"}"
 	    else
-		echo
+		echo "$i spliting not necessary."
 	    fi
     fi
 done
