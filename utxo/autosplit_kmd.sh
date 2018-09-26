@@ -1,7 +1,7 @@
 #!/bin/bash
 chips_cli=/home/xrobesx/chips3/src/chips-cli
 bitcoin_cli=bitcoin-cli
-gamecredits_cli=/home/xrobesx/GameCredits/src/gamecredits-cli
+gamecredits_cli=/home/xrobesx/gamecredits/src/gamecredits-cli
 komodo_cli=/home/xrobesx/komodo/src/komodo-cli
 hush_cli=/home/xrobesx/hush/src/hush-cli
 einsteinium_cli=/home/xrobesx/einsteinium/src/einsteinium-cli
