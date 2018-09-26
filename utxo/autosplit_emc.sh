@@ -9,9 +9,9 @@ einsteinium_cli=/home/xrobesx/einsteinium/src/einsteinium-cli
 utxo_min=75
 utxo_max=75
 
-# Here we trying to split only (!) EMC
+# Here we trying to split only (!) EMC2
 
-declare -a kmd_coins=(EMC)
+declare -a kmd_coins=(EMC2)
 for i in "${kmd_coins[@]}"
 do
     echo -n [$i] 
