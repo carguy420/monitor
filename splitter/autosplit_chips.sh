@@ -25,9 +25,7 @@ do
 		echo ' now --> need '$need
 		# /home/xrobesx/SuperNET/iguana/acsplit $i $need
 		echo "Making $need $i UTXO's..."
-		do
-		    curl --url "http://127.0.0.1:7776" --data "{\"coin\":\""${i}"\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":\"10000\",\"sendflag\":1,\"duplicates\":"${need}"}";
-		done
+		curl --url "http://127.0.0.1:7776" --data "{\"coin\":\""${i}"\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":\"10000\",\"sendflag\":1,\"duplicates\":"${need}"}"
 	    else
 		echo "$i spliting not necessary."
 	    fi
