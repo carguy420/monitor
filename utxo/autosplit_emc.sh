@@ -15,7 +15,7 @@ declare -a kmd_coins=(EMC)
 for i in "${kmd_coins[@]}"
 do
     echo -n [$i] 
-    utxo=$($einsteinium_cli listunspent | grep .0001 | wc -l)
+    utxo=$($einsteinium_cli listunspent | grep .001 | wc -l)
     echo -n ' '$utxo
     if [ $utxo -eq 0 ]; then
 	echo " Need funds!"
@@ -27,7 +27,7 @@ do
 		echo "Do you wish to split $i?"
 		select yn in "Yes" "No"; do
 		    case $yn in
-			Yes ) curl --url "http://127.0.0.1:7776" --data "{\"coin\":\""${i}"\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":\"10000\",\"sendflag\":1,\"duplicates\":"${need}"}"; break;;
+			Yes ) curl --url "http://127.0.0.1:7776" --data "{\"coin\":\""${i}"\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":\"100000\",\"sendflag\":1,\"duplicates\":"${need}"}"; break;;
 			No ) break;;
 		    esac
 		done
