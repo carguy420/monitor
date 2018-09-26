@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd
+
+cd .chips
+
+rm -rf wallet.dat 
+
+cd
+

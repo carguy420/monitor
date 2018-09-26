@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+
+cd
+
+cd .komodo
+
+rm -rf wallet.dat 
+
+cd
+

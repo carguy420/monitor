@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+cd 
+
+cd chips3/src
+
+./chips-cli getinfo
+
+cd

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+address=$1
+
+cd komodo/src
+
+privkey=$(./komodo-cli dumpprivkey $address)
+
+
+cd 
+
+cd komodo/src
+
+./komodo-cli importprivkey $privkey "" false
+
+cd

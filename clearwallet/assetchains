@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd
+
+cd .komodo
+
+rm -rf AXO/wallet.dat BET/wallet.dat BNTN/wallet.dat BOTS/wallet.dat BTCH/wallet.dat CCL/wallet.dat CEAL/wallet.dat CHAIN/wallet.dat COQUI/wallet.dat CRYPTO/wallet.dat DEX/wallet.dat DSEC/wallet.dat EQL/wallet.dat ETOMIC/wallet.dat GLXT/wallet.dat HODL/wallet.dat JUMBLR/wallet.dat KV/wallet.dat MESH/wallet.dat MGW/wallet.dat MNZ/wallet.dat MSHARK/wallet.dat NINJA/wallet.dat OOT/wallet.dat PANGEA/wallet.dat PRLPAY/wallet.dat REVS/wallet.dat RFOX/wallet.dat SEC/wallet.dat SUPERNET/wallet.dat WLC/wallet.dat ZILLA/wallet.dat 
+

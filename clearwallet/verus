@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd
+
+cd .komodo
+
+rm -rf VRSC/wallet.dat 
+
+cd

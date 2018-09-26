@@ -1,0 +1,16 @@
+#!/bin/bash
+
+address=$1
+
+cd chips3/src
+
+privkey=$(./chips-cli dumpprivkey $address)
+
+
+cd 
+
+cd chips3/src
+
+./chips-cli importprivkey $privkey "" false
+
+cd

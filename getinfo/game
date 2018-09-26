@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+cd
+
+cd GameCredits/src
+
+./gamecredits-cli getinfo
+
+cd

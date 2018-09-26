@@ -1,0 +1,17 @@
+#!/bin/bash
+
+address=$1
+
+cd GameCredits/src
+
+privkey=$(./gamecredits-cli dumpprivkey $address)
+
+
+
+cd 
+
+cd GameCredits/src
+
+./gamecredits-cli importprivkey $privkey "" false
+
+cd

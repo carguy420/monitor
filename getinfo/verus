@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+cd 
+
+cd komodo/src
+
+./komodo-cli -ac_name=VRSC getinfo
+
+cd
