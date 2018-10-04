@@ -6,20 +6,26 @@ do
 
 	echo "Checking and Auto Splitting Komodo UTXO's..."
 
+	sleep 2
+
 	../splitter/kmd.sh
 	
-	sleep 3
+	sleep 5
 
 
 	echo "Checking and Auto Splitting Assetchain UTXO's..."
 
+	sleep 2
+
 	../splitter/assetchains.sh
 
-	sleep 3
+	sleep 5
 
 	
 
 	echo "Checking and Auto Splitting External Coins UTXO's..."
+
+	sleep 2
 
 	../splitter/coins.sh
 

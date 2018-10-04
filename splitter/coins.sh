@@ -1,16 +1,20 @@
 #!/bin/bash
 
-./coins/btc.sh
+cd
+
+cd monitor/splitter/coins
+
+./btc.sh
 sleep 3
 
-./coins/chips.sh
+./chips.sh
 sleep 3
 
-./coins/game.sh
+./game.sh
 sleep 3
 
-./coins/hush.sh
+./hush.sh
 sleep 3
 
-./coins/emc2.sh
+./emc2.sh
 sleep 3
