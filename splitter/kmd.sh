@@ -7,7 +7,7 @@ hush_cli=/home/xrobesx/hush/src/hush-cli
 einsteinium_cli=/home/xrobesx/einsteinium/src/einsteinium-cli
 
 utxo_min=50
-utxo_max=75
+utxo_max=200
 
 # Here we trying to split only (!) KMD
 

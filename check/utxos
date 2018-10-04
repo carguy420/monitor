@@ -1,0 +1,28 @@
+#!/bin/bash
+
+while true
+
+do
+
+	echo "Checking and Auto Splitting Komodo UTXO's..."
+
+	../splitter/kmd.sh
+	
+	sleep 3
+
+
+	echo "Checking and Auto Splitting Assetchain UTXO's..."
+
+	../splitter/assetchains.sh
+
+	sleep 3
+
+	
+
+	echo "Checking and Auto Splitting External Coins UTXO's..."
+
+	../splitter/coins.sh
+
+	sleep 600
+
+done
